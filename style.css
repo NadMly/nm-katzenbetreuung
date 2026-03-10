@@ -176,6 +176,7 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
 .hero-content {
   max-width: 600px;
   margin-left: 8%;
+  margin-top: 40px;
   color: white;
 }
 
@@ -188,7 +189,10 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
 .hero-content h1 {
   max-width: 10ch;
 }
-
+.hero-content h1 {
+  max-width: 10ch;
+  font-size: 3.2rem;
+}
 @media (max-width: 720px) {
   .hero,
   .hero-overlay {
