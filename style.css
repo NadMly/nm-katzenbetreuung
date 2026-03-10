@@ -51,7 +51,7 @@ a { color: inherit; text-decoration: none; }
 .nav-links a { color: var(--muted); font-weight: 500; }
 .nav-links a:hover { color: var(--text); }
 .hero {
-  padding: 6rem 0 5rem;
+  padding: 4rem 0 3rem;
   background:
     radial-gradient(circle at top left, rgba(185, 141, 157, 0.22), transparent 35%),
     radial-gradient(circle at bottom right, rgba(140, 100, 114, 0.10), transparent 30%);
@@ -92,7 +92,9 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
 .region { max-width: 65ch; font-size: 0.98rem; }
 .section { padding: 5rem 0 7rem 0; }
 .section-soft { background: var(--bg-soft); }
-.section-accent { background: linear-gradient(180deg, #f8f1ee 0%, #f4ebe7 100%); }
+.section-accent {
+  background: transparent;
+}
 .section-heading { max-width: 760px; margin-bottom: 2rem; }
 .cards {
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem;
