@@ -168,7 +168,7 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
   height: auto;
   display: block;
   object-fit: cover;
-  object-position: 75% center;
+  object-position: 85% center;
 }
 
 .hero-overlay {
