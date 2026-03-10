@@ -91,7 +91,9 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
 }
 .region { max-width: 65ch; font-size: 0.98rem; }
 .section { padding: 5rem 0 7rem 0; }
-.section-soft { background: var(--bg-soft); }
+.section-soft {
+  background: transparent;
+}
 .section-accent {
   background: transparent;
 }
@@ -281,4 +283,7 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
   width: 50%;
   border-radius: 10px;
   object-fit: cover;
+}
+#ueber-mich {
+  margin-top: 4rem;
 }
