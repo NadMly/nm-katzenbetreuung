@@ -160,11 +160,10 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
 }
 
 .hero-image {
-  position: absolute;
-  inset: 0;
   width: 100%;
   height: auto;
   display: block;
+  position: relative;
 }
 
 .hero-overlay {
