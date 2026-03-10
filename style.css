@@ -170,7 +170,7 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
   position: relative;
   z-index: 2;
   width: 100%;
-  min-height: 72vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   background: linear-gradient(
