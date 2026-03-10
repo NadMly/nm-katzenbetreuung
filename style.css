@@ -65,7 +65,7 @@ h2 { font-size: clamp(2.3rem, 4vw, 3.7rem); margin-bottom: 1rem; }
 h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
 .hero-text, .section-heading p, .split-text p, .contact-grid p, .info-card p, .card-content p { color: var(--muted); }
 .hero-text { font-size: 1.12rem; max-width: 60ch; margin: 1.35rem 0 0; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 0.9rem; margin: 2.4rem 0 1.2rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.9rem; margin: 3rem 0 1.2rem; }
 .btn {
   display: inline-flex; align-items: center; justify-content: center;
   min-height: 52px; padding: 0 1.2rem; border-radius: 999px; font-weight: 600; transition: 0.2s ease;
