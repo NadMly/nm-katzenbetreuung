@@ -65,14 +65,18 @@ h2 { font-size: clamp(2.3rem, 4vw, 3.7rem); margin-bottom: 1rem; }
 h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
 .hero-text, .section-heading p, .split-text p, .contact-grid p, .info-card p, .card-content p { color: var(--muted); }
 .hero-text { font-size: 1.12rem; max-width: 60ch; margin: 1.35rem 0 0; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 0.9rem; margin: 2rem 0 1.2rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.9rem; margin: 2.4rem 0 1.2rem; }
 .btn {
   display: inline-flex; align-items: center; justify-content: center;
   min-height: 52px; padding: 0 1.2rem; border-radius: 999px; font-weight: 600; transition: 0.2s ease;
 }
 .btn-primary { background: var(--accent-dark); color: var(--white); }
 .btn-primary:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
-.btn-secondary { border: 1px solid var(--line); background: rgba(255,255,255,0.75); }
+.btn-secondary {
+  border: 1px solid rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.18);
+  color: #f0b8c7;
+}
 .region { max-width: 65ch; font-size: 0.98rem; }
 .section { padding: 5rem 0; }
 .section-soft { background: var(--bg-soft); }
@@ -181,13 +185,19 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
   color: white;
 }
 
-.hero-content .eyebrow,
-.hero-content .hero-text,
+.hero-content .hero-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1.1rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
 .hero-content .region {
-  font-size: 0.85rem;
-  opacity: 0.8;
-  margin-top: 0.8rem;
- color: rgba(255, 255, 255, 0.9);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  opacity: 0.82;
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .hero-content h1 {
