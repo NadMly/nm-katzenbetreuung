@@ -73,9 +73,11 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
 .btn-primary { background: var(--accent-dark); color: var(--white); }
 .btn-primary:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
 .btn-secondary {
-  border: 1px solid rgba(255,255,255,0.55);
-  background: rgba(255,255,255,0.18);
-  color: #f0b8c7;
+  border: 1px solid rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.25);
+  color: white; } 
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.4);
 }
 .region { max-width: 65ch; font-size: 0.98rem; }
 .section { padding: 5rem 0; }
