@@ -90,7 +90,7 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
   background: rgba(255,255,255,0.4);
 }
 .region { max-width: 65ch; font-size: 0.98rem; }
-.section { padding: 5rem 0; }
+.section { padding: 5rem 0 7rem 0; }
 .section-soft { background: var(--bg-soft); }
 .section-accent { background: linear-gradient(180deg, #f8f1ee 0%, #f4ebe7 100%); }
 .section-heading { max-width: 760px; margin-bottom: 2rem; }
