@@ -107,7 +107,7 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
   height: 100%;
 }
 .card-image {
-  height: 230px;
+  height: 320px;
   overflow: hidden;
 }
 .card-image img {
@@ -116,9 +116,8 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
   object-fit: cover;
   display: block;
 }
-}
 .card-content {
-  padding: 1.25rem 1.25rem 1.35rem 1.25rem;
+  padding: 1.8rem;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
