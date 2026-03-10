@@ -153,6 +153,8 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
 .hero {
   position: relative;
   width: 100%;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .hero-image {
