@@ -303,3 +303,9 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
 #ueber-mich {
   margin-top: 4rem;
 }
+
+.brand span {
+  display: inline-block;
+  transform: scaleY(0.94);
+  transform-origin: center;
+}
