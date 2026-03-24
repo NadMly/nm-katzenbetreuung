@@ -99,7 +99,7 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
   background: rgba(255,255,255,0.4);
 }
 .region { max-width: 65ch; font-size: 0.98rem; }
-.section { padding: 5rem 0 5rem 0; }
+.section { padding: 3.5rem 0 4rem 0; }
 .section-soft {
   background: transparent;
 }
