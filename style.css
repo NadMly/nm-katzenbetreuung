@@ -89,7 +89,13 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
   display: inline-flex; align-items: center; justify-content: center;
   min-height: 52px; padding: 0 1.2rem; border-radius: 999px; font-weight: 600; transition: 0.2s ease;
 }
-.btn-primary { background: var(--accent-dark); color: var(--white); }
+.btn-primary {
+  background: var(--accent-dark);
+  color: var(--white);
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
 .btn-primary:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
 .btn-secondary {
   border: 1px solid rgba(255,255,255,0.7);
