@@ -243,15 +243,39 @@
   const knowledgeNext = document.querySelector(".knowledge-arrow-right");
 
   if (knowledgeSlider && knowledgePrev && knowledgeNext) {
-    const scrollAmount = () => knowledgeSlider.clientWidth * 0.92;
+    const cards = Array.from(knowledgeSlider.children);
+    let currentPage = 0;
+
+    const cardsPerPage = () => {
+      return window.innerWidth <= 920 ? 1 : 2;
+    };
+
+    const totalPages = () => {
+      return Math.ceil(cards.length / cardsPerPage());
+    };
+
+    const goToPage = (page) => {
+      const maxPage = totalPages() - 1;
+      currentPage = Math.max(0, Math.min(page, maxPage));
+      knowledgeSlider.scrollTo({
+        left: knowledgeSlider.clientWidth * currentPage,
+        behavior: "smooth"
+      });
+    };
 
     knowledgePrev.addEventListener("click", () => {
-      knowledgeSlider.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+      goToPage(currentPage - 1);
     });
 
     knowledgeNext.addEventListener("click", () => {
-      knowledgeSlider.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+      goToPage(currentPage + 1);
     });
+
+    window.addEventListener("resize", () => {
+      goToPage(currentPage);
+    });
+  }
+</script>
   }
 </script>
 </body>
