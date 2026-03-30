@@ -246,8 +246,16 @@
     const cards = Array.from(knowledgeSlider.children);
     let currentPage = 0;
 
-    const cardsPerPage = () => {
-      return window.innerWidth <= 920 ? 1 : 2;
+    const cardsPerPage = () => window.innerWidth <= 920 ? 1 : 2;
+
+    const getGap = () => {
+      const styles = window.getComputedStyle(knowledgeSlider);
+      return parseFloat(styles.columnGap || styles.gap || 0);
+    };
+
+    const getCardWidth = () => {
+      if (!cards.length) return 0;
+      return cards[0].getBoundingClientRect().width;
     };
 
     const totalPages = () => {
@@ -257,8 +265,15 @@
     const goToPage = (page) => {
       const maxPage = totalPages() - 1;
       currentPage = Math.max(0, Math.min(page, maxPage));
+
+      const perPage = cardsPerPage();
+      const cardWidth = getCardWidth();
+      const gap = getGap();
+
+      const scrollLeft = currentPage * ((cardWidth + gap) * perPage);
+
       knowledgeSlider.scrollTo({
-        left: knowledgeSlider.clientWidth * currentPage,
+        left: scrollLeft,
         behavior: "smooth"
       });
     };
@@ -274,9 +289,6 @@
     window.addEventListener("resize", () => {
       goToPage(currentPage);
     });
-  }
-</script>
-  }
 </script>
 </body>
 </html>
