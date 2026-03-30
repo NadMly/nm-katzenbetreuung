@@ -381,3 +381,6 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
     height: 42px;
   }
 }
+#katzenwissen {
+  scroll-margin-top: 160px;
+}
