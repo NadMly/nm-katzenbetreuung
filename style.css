@@ -386,3 +386,199 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
 #katzenwissen {
   scroll-margin-top: 160px;
 }
+@media (max-width: 920px) {
+  .site-header {
+    position: sticky;
+    top: 0;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.9rem;
+    padding: 0.9rem 0;
+    min-height: auto;
+  }
+
+  .brand {
+    font-size: 1.7rem;
+    gap: 8px;
+  }
+
+  .brand img {
+    height: 42px;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 0.8rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+
+  .hero {
+    min-height: auto;
+    margin-top: 0;
+  }
+
+  .hero-image {
+    min-height: 78vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    padding-top: 0;
+    align-items: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 1.25rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.08;
+    max-width: 11ch;
+  }
+
+  .hero-content .hero-text {
+    font-size: 0.98rem;
+    max-width: 32ch;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    margin: 1.5rem 0 1rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-content .region {
+    font-size: 0.78rem;
+    max-width: 34ch;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card-image {
+    height: 260px;
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  .about-collage {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .about-small-row {
+    gap: 6px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .knowledge-slider-wrapper {
+    gap: 0.5rem;
+  }
+
+  .knowledge-slider {
+    grid-auto-columns: 100%;
+  }
+
+  .knowledge-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  #katzenwissen {
+    scroll-margin-top: 120px;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: min(var(--container), calc(100% - 1.2rem));
+  }
+
+  .brand {
+    font-size: 1.45rem;
+  }
+
+  .brand img {
+    height: 36px;
+  }
+
+  .nav-links {
+    gap: 0.65rem 0.85rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .hero-image {
+    min-height: 82vh;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.7rem;
+    max-width: 12ch;
+  }
+
+  .hero-content .hero-text {
+    font-size: 0.93rem;
+  }
+
+  .hero-content .region {
+    font-size: 0.74rem;
+  }
+
+  .card-content {
+    padding: 1.2rem;
+  }
+
+  .card-image {
+    height: 220px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+}
