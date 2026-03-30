@@ -234,7 +234,25 @@
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script>
+  const knowledgeSlider = document.getElementById("knowledgeSlider");
+  const knowledgePrev = document.querySelector(".knowledge-arrow-left");
+  const knowledgeNext = document.querySelector(".knowledge-arrow-right");
+
+  if (knowledgeSlider && knowledgePrev && knowledgeNext) {
+    const scrollAmount = () => knowledgeSlider.clientWidth * 0.92;
+
+    knowledgePrev.addEventListener("click", () => {
+      knowledgeSlider.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+    });
+
+    knowledgeNext.addEventListener("click", () => {
+      knowledgeSlider.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+    });
+  }
+</script>
 </body>
 </html>
