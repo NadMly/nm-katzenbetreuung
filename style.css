@@ -557,4 +557,7 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
     bottom: 12px;
     font-size: 0.68rem;
   }
+  .hero-overlay {
+  position: absolute;
+  inset: 0;
 }
