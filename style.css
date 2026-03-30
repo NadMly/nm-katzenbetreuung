@@ -331,10 +331,12 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
   grid-auto-flow: column;
   grid-auto-columns: calc(50% - 0.6rem);
   gap: 1.2rem;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   scroll-behavior: smooth;
+  scrollbar-width: none;
   width: 100%;
-  padding: 0.25rem 0;
+  padding: 0;
 }
 
 .knowledge-slider::-webkit-scrollbar {
