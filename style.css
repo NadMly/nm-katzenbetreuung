@@ -319,3 +319,66 @@ h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
   transform: scaleY(0.94);
   transform-origin: center;
 }
+.knowledge-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.knowledge-slider {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(50% - 0.6rem);
+  gap: 1.2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  width: 100%;
+  padding: 0.25rem 0;
+}
+
+.knowledge-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.knowledge-card {
+  min-height: 100%;
+}
+
+.knowledge-card p + p {
+  margin-top: 0.8rem;
+}
+
+.knowledge-arrow {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--accent-dark);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.knowledge-arrow:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 920px) {
+  .knowledge-slider {
+    grid-auto-columns: 100%;
+  }
+
+  .knowledge-slider-wrapper {
+    gap: 0.6rem;
+  }
+
+  .knowledge-arrow {
+    width: 42px;
+    height: 42px;
+  }
+}
