@@ -1,1 +1,104 @@
-<!DOCTYPE html>...
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kundenbilder | N.M. Mobile Katzenbetreuung</title>
+  <meta name="description" content="Katzen, die ich betreuen durfte – ein kleiner Einblick in vergangene Betreuungen von N.M. Mobile Katzenbetreuung.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html#start">
+        <img src="logo.png" alt="Logo">
+        <span style="color:#655b69;">N.M. Mobile Katzenbetreuung</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#start">Start</a>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="index.html#ueber-mich">Über mich</a>
+        <a href="index.html#katzenwissen">Katzenwissen</a>
+        <a href="kundenbilder.html">Kundenbilder</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="kundenbilder-hero section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Kundenbilder</p>
+          <h2>Katzen, die ich betreuen durfte</h2>
+          <p>Ein kleiner Einblick in einige meiner bisherigen Betreuungen.</p>
+        </div>
+
+        <div class="kundenbilder-grid">
+          <article class="kundenkatze-card">
+            <img src="images/betreuung1.JPG" alt="Katze Milo">
+            <div class="kundenkatze-content">
+              <h3>Milo</h3>
+            </div>
+          </article>
+
+          <article class="kundenkatze-card">
+            <img src="images/betreuung.jpg" alt="Katze Luna">
+            <div class="kundenkatze-content">
+              <h3>Luna</h3>
+            </div>
+          </article>
+
+          <article class="kundenkatze-card">
+            <img src="images/tierarzt.jpg" alt="Katze Simba">
+            <div class="kundenkatze-content">
+              <h3>Simba</h3>
+            </div>
+          </article>
+
+          <article class="kundenkatze-card">
+            <img src="images/ich1.jpg" alt="Katze Nala">
+            <div class="kundenkatze-content">
+              <h3>Nala</h3>
+            </div>
+          </article>
+
+          <article class="kundenkatze-card">
+            <img src="images/ich2.jpg" alt="Katze Leo">
+            <div class="kundenkatze-content">
+              <h3>Leo</h3>
+            </div>
+          </article>
+
+          <article class="kundenkatze-card">
+            <img src="images/ich4.jpg" alt="Katze Mimi">
+            <div class="kundenkatze-content">
+              <h3>Mimi</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> N.M. Mobile Katzenbetreuung</p>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
