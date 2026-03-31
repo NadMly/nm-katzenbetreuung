@@ -770,3 +770,46 @@ h3 {
     font-size: 0.52rem;
   }
 }
+.kundenbilder-hero {
+  padding-top: 5rem;
+}
+
+.kundenbilder-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.kundenkatze-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.kundenkatze-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.kundenkatze-content {
+  padding: 1rem 1.1rem 1.15rem;
+}
+
+.kundenkatze-content h3 {
+  margin: 0;
+}
+
+@media (max-width: 920px) {
+  .kundenbilder-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .kundenbilder-grid {
+    grid-template-columns: 1fr;
+  }
+}
