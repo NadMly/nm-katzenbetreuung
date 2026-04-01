@@ -541,10 +541,12 @@ h3 {
 }
 
 /* Mobile */
+/* Mobile */
 .mobile-menu-toggle,
 .hero-mobile-info {
   display: none;
 }
+
 @media (max-width: 920px) {
   .container {
     width: min(var(--container), calc(100% - 1.5rem));
@@ -808,6 +810,8 @@ h3 {
     padding: 0.9rem 0;
     min-height: auto;
   }
+}
+
 @media (max-width: 520px) {
   .container {
     width: min(var(--container), calc(100% - 1.2rem));
@@ -864,8 +868,6 @@ h3 {
     border-radius: 22px;
   }
 }
-}
-
 .kundenbilder-hero {
   padding-top: 5rem;
 }
@@ -977,7 +979,6 @@ h3 {
   .preview-cat-card {
     border-radius: 14px;
   }
-
 
 .katzenwissen-panel {
   background: var(--bg-soft);
