@@ -781,15 +781,25 @@ h3 {
   gap: 1.2rem;
 }
 
+.kundenkatze-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
 .kundenkatze-card img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 16px;
+  display: block;
 }
 
 .kundenkatze-card h3 {
-  margin-top: 0.5rem;
+  margin: 0;
+  padding: 0.85rem 1rem 1rem;
+  font-size: 1.02rem;
 }
 
 @media (max-width: 920px) {
