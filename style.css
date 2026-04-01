@@ -888,10 +888,10 @@ h3 {
   scroll-margin-top: 160px;
 }
 
-.katzenwissen-box {
+.katzenwissen-panel {
   background: var(--bg-soft);
   border: 1px solid var(--line);
-  border-radius: 28px;
-  padding: 2rem;
+  border-radius: 32px;
+  padding: 2.5rem;
   box-shadow: 0 12px 30px rgba(78, 49, 58, 0.05);
 }
