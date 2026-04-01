@@ -813,3 +813,6 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+.kundenbilder-hero .section-heading {
+  max-width: 100%;
+}
