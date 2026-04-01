@@ -337,5 +337,44 @@
       });
     }
   </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const previewCards = document.querySelectorAll(".preview-cat-card");
+
+    previewCards.forEach((card, cardIndex) => {
+      const imageList = JSON.parse(card.dataset.images || "[]");
+      const wrap = card.querySelector(".preview-cat-image-wrap");
+      let currentIndex = 0;
+
+      if (!wrap || imageList.length < 2) return;
+
+      setInterval(() => {
+        const currentImage = wrap.querySelector(".preview-cat-image.is-active");
+        const nextIndex = (currentIndex + 1) % imageList.length;
+        const nextSrc = imageList[nextIndex];
+
+        const nextImage = document.createElement("img");
+        nextImage.src = nextSrc;
+        nextImage.alt = "";
+        nextImage.className = "preview-cat-image";
+
+        wrap.appendChild(nextImage);
+
+        requestAnimationFrame(() => {
+          nextImage.classList.add("is-active");
+          if (currentImage) currentImage.classList.remove("is-active");
+        });
+
+        setTimeout(() => {
+          if (currentImage) currentImage.remove();
+        }, 1300);
+
+        currentIndex = nextIndex;
+      }, 3200 + cardIndex * 450);
+    });
+  });
+</script>
+  
 </body>
 </html>
