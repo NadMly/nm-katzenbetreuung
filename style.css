@@ -458,7 +458,7 @@ h3 {
   margin-bottom: 1rem;
   font: inherit;
   color: var(--text);
-  background: #fffdfa;
+  background: var(--bg-soft);
 }
 
 .contact-form input:focus,
