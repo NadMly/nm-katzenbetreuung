@@ -20,7 +20,12 @@
         <img src="logo.png" alt="Logo">
         <span style="color:#655b69;">N.M. Mobile Katzenbetreuung</span>
       </a>
-     <nav class="nav-links">
+      <button class="mobile-menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileMenu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+     <nav class="nav-links" id="mobileMenu">
   <a href="#start">Start</a>
   <a href="#leistungen">Leistungen</a>
   <a href="#ueber-mich">Über mich</a>
@@ -60,8 +65,26 @@
           Alle Bilder auf dieser Seite stammen aus meinen eigenen Betreuungen und wurden mit Einverständnis der Halter veröffentlicht.
         </div>
       </div>
-    </section>
+           <div class="hero-mobile-info">
+        <div class="container">
+          <p class="hero-mobile-text">
+            Betreuung in der gewohnten Umgebung – mit über 10 Jahren Katzenerfahrung.
+            Gerne lernen wir uns bei einem kostenlosen Termin vor Ort persönlich kennen.
+            Kleintierbetreuung nach Absprache ebenfalls möglich.
+          </p>
 
+          <p class="hero-mobile-region">
+            Betreuung im Raum Kelkheim, Hofheim, Bad Soden, Königstein, Eppstein,
+            Sulzbach sowie Randgebiete von Wiesbaden und Frankfurt.
+          </p>
+
+          <a href="mailto:nmkatzenbetreuung@gmx.de?subject=Anfrage Katzenbetreuung" class="btn btn-primary hero-mobile-button">
+            Per E-Mail anfragen
+          </a>
+        </div>
+      </div>
+    </section>
+    
     <section id="leistungen" class="section">
       <div class="container">
         <div class="section-heading">
@@ -421,6 +444,27 @@
     });
   });
 </script>
-  
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".mobile-menu-toggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener("click", function () {
+        const isOpen = mobileMenu.classList.toggle("is-open");
+        menuToggle.classList.toggle("is-open");
+        menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      mobileMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function () {
+          mobileMenu.classList.remove("is-open");
+          menuToggle.classList.remove("is-open");
+          menuToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+  });
+</script>
 </body>
 </html>
