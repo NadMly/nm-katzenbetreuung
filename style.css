@@ -547,7 +547,7 @@ h3 {
   display: none;
 }
 
-@ (max-width: 920px) {
+@media (max-width: 920px) {
   .container {
     width: min(var(--container), calc(100% - 2rem));
   }
@@ -803,9 +803,6 @@ h3 {
     gap: 0.55rem;
   }
 
-  .info-card {
-    padding: 1rem;
-  }
 
   .about-collage {
     max-width: 100%;
