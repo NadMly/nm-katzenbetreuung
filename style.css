@@ -664,18 +664,18 @@ h3 {
   }
 
   .hero-content {
-    max-width: 100%;
-    margin-left: 0;
-    margin-top: 0;
-    padding: 1rem 1rem 4.8rem;
-  }
+  max-width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 2.2rem 1.1rem 4.8rem;
+}
 
-  .hero-content h1 {
-    max-width: 10ch;
-    font-size: 1.95rem;
-    line-height: 0.98;
-    color: rgba(255, 255, 255, 0.94) !important;
-  }
+.hero-content h1 {
+  max-width: 9.5ch;
+  font-size: 1.65rem;
+  line-height: 1.02;
+  color: rgba(255, 255, 255, 0.94) !important;
+}
 
   .hero-content .hero-text,
   .hero-actions,
@@ -684,12 +684,13 @@ h3 {
   }
 
   .hero-note-overlay {
-    left: 1rem;
-    right: 1rem;
-    bottom: 10px;
-    font-size: 0.56rem;
-    line-height: 1.28;
-  }
+  left: 1.1rem;
+  right: 1.1rem;
+  bottom: 0.7rem;
+  font-size: 0.5rem;
+  line-height: 1.22;
+  color: rgba(255, 255, 255, 0.82);
+}
 
   .hero-mobile-info {
     display: block;
@@ -834,16 +835,17 @@ h3 {
   }
 
   .hero-content h1 {
-    font-size: 1.78rem;
-    max-width: 10ch;
+  font-size: 1.5rem;
+  max-width: 9.5ch;
   }
 
   .hero-note-overlay {
-    font-size: 0.5rem;
-    line-height: 1.25;
-    left: 0.9rem;
-    right: 0.9rem;
-  }
+  font-size: 0.46rem;
+  line-height: 1.18;
+  left: 0.9rem;
+  right: 0.9rem;
+  bottom: 0.6rem;
+}
 
   .hero-mobile-text {
     font-size: 0.9rem;
