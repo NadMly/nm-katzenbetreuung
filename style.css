@@ -547,9 +547,9 @@ h3 {
   display: none;
 }
 
-@media (max-width: 920px) {
+@ (max-width: 920px) {
   .container {
-    width: min(var(--container), calc(100% - 1.5rem));
+    width: min(var(--container), calc(100% - 2rem));
   }
 
   .site-header {
@@ -761,8 +761,9 @@ h3 {
   .contact-grid p,
   .info-card p,
   .card-content p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
+  
 
   .cards,
   .split,
@@ -815,7 +816,7 @@ h3 {
 
 @media (max-width: 520px) {
   .container {
-    width: min(var(--container), calc(100% - 1.2rem));
+    width: min(var(--container), calc(100% - 1.6rem));
   }
 
   .brand {
