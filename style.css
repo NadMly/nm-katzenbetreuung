@@ -654,21 +654,7 @@ h3 {
     object-fit: cover;
     object-position: center;
   }
-  
-.hero-image-button {
-  display: inline-flex;
-  min-height: 40px;
-  padding: 0 1rem;
-  margin-top: 0.9rem;
-  font-size: 0.88rem;
-  width: auto;
-  min-width: 0;
-  align-self: flex-start;
-}
-  .hero-mobile-button {
-  display: none;
-}
-  
+
   .hero-overlay {
     position: absolute;
     inset: 0;
@@ -681,13 +667,13 @@ h3 {
   max-width: 100%;
   margin-left: 0;
   margin-top: 0;
-  padding: 3.2rem 1.2rem 4.8rem;
+  padding: 2.2rem 1.1rem 4.8rem;
 }
 
 .hero-content h1 {
-  max-width: 11.5ch;
-  font-size: 1.55rem;
-  line-height: 1.06;
+  max-width: 9.5ch;
+  font-size: 1.65rem;
+  line-height: 1.02;
   color: rgba(255, 255, 255, 0.94) !important;
 }
 
@@ -698,11 +684,11 @@ h3 {
   }
 
   .hero-note-overlay {
-  left: 1.2rem;
-  right: 1.2rem;
-  bottom: 0.35rem;
-  font-size: 0.42rem;
-  line-height: 1.16;
+  left: 1.1rem;
+  right: 1.1rem;
+  bottom: 0.7rem;
+  font-size: 0.5rem;
+  line-height: 1.22;
   color: rgba(255, 255, 255, 0.82);
 }
 
@@ -748,23 +734,14 @@ h3 {
     padding-bottom: 4.5rem;
   }
 .katzenwissen-panel {
-  padding: 0.85rem;
-  border-radius: 22px;
+  padding: 1.2rem;
+  border-radius: 24px;
 }
 
 .knowledge-slider-wrapper {
-  gap: 0.35rem;
-}
-  
-.knowledge-arrow {
-  width: 30px;
-  height: 30px;
-  font-size: 0.8rem;
+  gap: 0.6rem;
 }
 
-.knowledge-card {
-  min-width: 0;
-}
 .info-card {
   padding: 0.9rem;
 }
@@ -871,30 +848,22 @@ h3 {
   .hero-image {
     height: 280px;
   }
-  
-.hero-image-button {
-  min-height: 36px;
-  padding: 0 0.9rem;
-  margin-top: 0.75rem;
-  font-size: 0.82rem;
-}
-  
+
   .hero-content {
     padding: 0.9rem 0.9rem 4.4rem;
   }
 
- .hero-content h1 {
-  font-size: 1.38rem;
-  max-width: 11ch;
-  line-height: 1.06;
-}
+  .hero-content h1 {
+  font-size: 1.5rem;
+  max-width: 9.5ch;
+  }
 
   .hero-note-overlay {
-  font-size: 0.38rem;
-  line-height: 1.12;
+  font-size: 0.46rem;
+  line-height: 1.18;
   left: 0.9rem;
   right: 0.9rem;
-  bottom: 0.3rem;
+  bottom: 0.6rem;
 }
 
   .hero-mobile-text {
@@ -915,11 +884,11 @@ h3 {
     height: 42px;
   }
 
-.katzenwissen-panel {
-  padding: 0.7rem;
-  border-radius: 18px;
+  .katzenwissen-panel {
+  padding: 0.9rem;
+  border-radius: 20px;
 }
-
+}
 .kundenbilder-hero {
   padding-top: 5rem;
 }
