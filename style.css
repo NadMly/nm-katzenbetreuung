@@ -733,7 +733,28 @@ h3 {
     scroll-margin-top: 90px;
     padding-bottom: 4.5rem;
   }
+.katzenwissen-panel {
+  padding: 1.2rem;
+  border-radius: 24px;
+}
 
+.knowledge-slider-wrapper {
+  gap: 0.6rem;
+}
+
+.info-card {
+  padding: 0.9rem;
+}
+
+.knowledge-card h3 {
+  font-size: 1rem;
+  line-height: 1.18;
+}
+
+.knowledge-card p {
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
   #einblicke-preview {
     padding-top: 2rem;
     padding-bottom: 6.5rem;
@@ -867,9 +888,9 @@ h3 {
   }
 
   .katzenwissen-panel {
-    padding: 1rem;
-    border-radius: 22px;
-  }
+  padding: 0.9rem;
+  border-radius: 20px;
+}
 }
 .kundenbilder-hero {
   padding-top: 5rem;
