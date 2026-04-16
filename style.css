@@ -552,6 +552,9 @@ h3 {
     width: min(var(--container), calc(100% - 2rem));
   }
 
+  .hero-note-overlay {
+  display: none;
+}
   .site-header {
     background: rgba(252, 248, 246, 0.94);
   }
