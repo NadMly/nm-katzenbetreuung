@@ -275,6 +275,10 @@ h3 {
   padding: 3.5rem 0 4rem 0;
 }
 
+#leistungen {
+  margin-top: 3rem;
+}
+
 .section-soft,
 .section-accent {
   background: transparent;
